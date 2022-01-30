@@ -15,7 +15,7 @@ function ucFirst(str) {
   return newStr;
   
 }
-console.log(ucFirst('ж'));
+ucFirst('ж');
 
 
 

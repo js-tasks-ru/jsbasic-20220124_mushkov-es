@@ -1,8 +1,8 @@
 function checkSpam(str) {
   str = str.toLowerCase();
-  if (str === 'xxx' || str === '1xbet' || str === 'ххх') {
+  if (str.includes('1xbet') || str.includes('xxx')) {
     return true;
   }
   return false;
 }
-console.log(checkSpam('ХХХ'));
+checkSpam('innocent rabbit');

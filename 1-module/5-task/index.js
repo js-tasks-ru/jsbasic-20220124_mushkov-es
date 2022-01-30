@@ -1,16 +1,14 @@
 function truncate(str, maxlength) {
   let newStr = '';
   if (str.length > maxlength) {
-    for (i = 0; i < maxlength; i++) {
+    for (i = 0; i < maxlength - 1; i++) {
       newStr += str[i];
     }
     newStr += '...';
   }
   else {
-    for (j = 0; j < str.length; j++) {
-      newStr += str[j];
-    }
+    newStr = str;
   }
   return newStr;
 }
-truncate('Всем привет!', 20);
+console.log(truncate ('Вот, что мне хотелось бы сказать на эту тему', 20));
