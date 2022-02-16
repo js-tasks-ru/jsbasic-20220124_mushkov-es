@@ -1,6 +1,7 @@
 function highlight(table) {
   let status, age, gender = 0;
   let rows = table.rows[0].cells
+  console.log(table.rows[0].cells)
   for (let i = 0; i < table.rows[0].cells.length; i++) {
     switch(rows[i].innerHTML) {
       case 'Status':
@@ -14,7 +15,6 @@ function highlight(table) {
         break;
     }
   }
-
   for (let i = 1; i < table.rows.length; i++) {
     checkStatus(table.rows[i].cells[status], table.rows[i])
     checkMale(table.rows[i].cells[gender], table.rows[i])
